@@ -49,36 +49,64 @@ public abstract class Persona {
 	public int getId() {
 		return id;
 	}
-
+	/**
+	 * Método para modificiar el número de ID
+	 * @param id Nuevo número de ID en formato int
+	 */
 	public void setId(int id) {
 		this.id = id;
 	}
-
+	
+	/**
+	 * Método para obtener el nombre
+	 * @return Nombre en formato String
+	 */
 	public String getNombre() {
 		return nombre;
 	}
-
+	
+	/**
+	 * Método para cambiar el nombre
+	 * @param nombre Nuevo nombre en formato String
+	 */
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
-
+	/**
+	 * Método para obtener los apellidos
+	 * @return Apellidos en formato String
+	 */
 	public String getApellidos() {
 		return apellidos;
 	}
-
+	/**
+	 * Método para modificar los apellidos
+	 * @param apellidos Nuevos apellidos en formato String
+	 */
 	public void setApellidos(String apellidos) {
 		this.apellidos = apellidos;
 	}
-
+	/**
+	 * Método para obtener la fecha de nacimiento
+	 * @return Fecha de nacimiento en formato LocalDate
+	 */
 	public LocalDate getFechaNac() {
 		return fechaNac;
 	}
+	/**
+	 * Método común a todos los integrantes de la selección
+	 * Imprime por pantalla un aviso de que se concentran antes de un partido
+	 */
 	public void concentrarse() {
 		System.out.println("Concentrandose 2 días antes del partido.");
 	}
-	
+	/**
+	 * Método abstracto que implementan todos los integrantes de la selección
+	 */
 	public abstract void viajar();
-
+	/**
+	 * Método para mostrar por pantalla la información de la persona
+	 */
 	@Override
 	public String toString() {
 		return "ComponenteSeleccion [id=" + id + ", nombre=" + nombre + ", apellidos=" + apellidos + ", fechaNac="
