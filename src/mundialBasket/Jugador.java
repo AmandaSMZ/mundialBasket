@@ -1,19 +1,38 @@
 package mundialBasket;
 
+/**
+ * Clase que hereda de Persona.
+ */
+
 public class Jugador extends Persona{
 	private int dorsal;
 	private String demarcacion;
 	
+	/**
+	 * Constructor clase Jugador
+	 * @param id ID (int)
+	 * @param nombre (String)
+	 * @param apellidos (String)
+	 * @param fechaNac (String)
+	 * @param dorsal (int)
+	 * @param demarcacion (String)
+	 */
 	public Jugador(int id, String nombre, String apellidos, String fechaNac, int dorsal, String demarcacion) {
 		super(id, nombre, apellidos, fechaNac);
 		this.dorsal = dorsal;
 		this.demarcacion = demarcacion;
 	}
-
+	/**
+	 * Método para obtener el numero de dorsal
+	 * @return número de dorsal (int)
+	 */
 	protected int getDorsal() {
 		return dorsal;
 	}
-
+	/**
+	 * Método para cambiar el dorsal
+	 * @param dorsal (Nuevo número de dorsal)
+	 */
 	protected void setDorsal(int dorsal) {
 		this.dorsal = dorsal;
 	}

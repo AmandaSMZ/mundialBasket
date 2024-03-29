@@ -34,6 +34,17 @@ public abstract class Persona {
 	}
 	
 	/**
+	 * Método para calcular la edad
+	 * @return edad en años (int)
+	 * @since 1.0
+	 * @deprecated replaced by {@link #calcularEdad()}
+	 */
+	public int calcularEdadAnios() {
+		int edad = this.fechaNac.getYear() - LocalDate.now().getYear()
+		return edad;
+	}
+	
+	/**
 	 * Método que calcula la edad de la persona.
 	 * @return Devuelve el número de años (int).
 	 */
