@@ -40,7 +40,7 @@ public abstract class Persona {
 	 * @deprecated replaced by {@link #calcularEdad()}
 	 */
 	public int calcularEdadAnios() {
-		int edad = this.fechaNac.getYear() - LocalDate.now().getYear()
+		int edad = this.fechaNac.getYear() - LocalDate.now().getYear();
 		return edad;
 	}
 	

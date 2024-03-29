@@ -2,6 +2,8 @@ package mundialBasket;
 
 /**
  * Clase que hereda de Persona.
+ * @author amand
+ * @version 1.0
  */
 
 public class Jugador extends Persona{
