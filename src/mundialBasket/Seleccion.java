@@ -22,7 +22,7 @@ public class Seleccion {
 	 * Método para añadir integrante a la Seleccion
 	 * @param integrante Puede ser Jugador, Entrenador o Masajista
 	 */
-	public void añadirIntegrante(Persona integrante) {
+	public void aniadirIntegrante(Persona integrante) {
 		this.integrantes.add(integrante);
 	}
 
