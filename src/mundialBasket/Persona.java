@@ -4,7 +4,7 @@ import java.time.LocalDate;
 import java.time.Period;
 
 /**
- * Clase que representa a todos los integrantes de la selección
+ * Clase que representa a todos los integrantes de la seleccion
  * @author Amanda
  * @version 1.0
  * 
@@ -34,7 +34,7 @@ public abstract class Persona {
 	}
 	
 	/**
-	 * Método para calcular la edad
+	 * Metodo para calcular la edad
 	 * @return edad en años (int)
 	 * @since 1.0
 	 * @deprecated replaced by {@link #calcularEdad()}
@@ -45,8 +45,8 @@ public abstract class Persona {
 	}
 	
 	/**
-	 * Método que calcula la edad de la persona.
-	 * @return Devuelve el número de años (int).
+	 * Metodo que calcula la edad de la persona.
+	 * @return Devuelve el numero de años (int).
 	 */
 	public int calcularEdad() {
 		Period periodo = Period.between(this.fechaNac, LocalDate.now());
@@ -54,22 +54,22 @@ public abstract class Persona {
 	}
 	
 	/**
-	 * Método para obtener el número de ID
+	 * Metodo para obtener el numero de ID
 	 * @return un entero (ID)
 	 */
 	public int getId() {
 		return id;
 	}
 	/**
-	 * Método para modificiar el número de ID
-	 * @param id Nuevo número de ID en formato int
+	 * Metodo para modificiar el numero de ID
+	 * @param id Nuevo numero de ID en formato int
 	 */
 	public void setId(int id) {
 		this.id = id;
 	}
 	
 	/**
-	 * Método para obtener el nombre
+	 * Metodo para obtener el nombre
 	 * @return Nombre en formato String
 	 */
 	public String getNombre() {
@@ -77,48 +77,50 @@ public abstract class Persona {
 	}
 	
 	/**
-	 * Método para cambiar el nombre
+	 * Metodo para cambiar el nombre
 	 * @param nombre Nuevo nombre en formato String
 	 */
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
 	/**
-	 * Método para obtener los apellidos
+	 * Metodo para obtener los apellidos
 	 * @return Apellidos en formato String
 	 */
 	public String getApellidos() {
 		return apellidos;
 	}
 	/**
-	 * Método para modificar los apellidos
+	 * Metodo para modificar los apellidos
 	 * @param apellidos Nuevos apellidos en formato String
 	 */
 	public void setApellidos(String apellidos) {
 		this.apellidos = apellidos;
 	}
 	/**
-	 * Método para obtener la fecha de nacimiento
+	 * Metodo para obtener la fecha de nacimiento
 	 * @return Fecha de nacimiento en formato LocalDate
 	 */
 	public LocalDate getFechaNac() {
 		return fechaNac;
 	}
 	/**
-	 * Método común a todos los integrantes de la selección
+	 * Metodo comun a todos los integrantes de la seleccion
 	 * Imprime por pantalla un aviso de que se concentran antes de un partido
 	 */
 	public void concentrarse() {
 		System.out.println("Concentrandose 2 días antes del partido.");
 	}
 	/**
-	 * Método abstracto que implementan todos los integrantes de la selección
+	 * Metodo abstracto que implementan todos los integrantes de la seleccion
 	 */
 	public abstract void viajar();
-	/**
-	 * Método para mostrar por pantalla la información de la persona
-	 */
 	@Override
+	/**
+	 * Metodo para mostrar por pantalla la informacion de la persona
+	 * @return devuelve un String con toda la informacion de la persona
+	 */
+	
 	public String toString() {
 		return "ComponenteSeleccion [id=" + id + ", nombre=" + nombre + ", apellidos=" + apellidos + ", fechaNac="
 				+ fechaNac + "]";

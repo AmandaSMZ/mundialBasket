@@ -14,6 +14,7 @@ public class Principal {
 		italia.dirigirEntrenamiento("2024-06-05");
 		italia.jugarPartido();
 		
+		
 	}
 
 }

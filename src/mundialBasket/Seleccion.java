@@ -1,8 +1,11 @@
+/**
+ * Paquete que contiene las clases que representan a una seleccion
+ */
 package mundialBasket;
 
 import java.util.ArrayList;
 /**
- * Clase que contiene una lista con los integrantes de la selección (Pueden ser de las clases que heredan de Persona)
+ * Clase que contiene una lista con los integrantes de la seleccion (Pueden ser de las clases que heredan de Persona)
  * @author amand
  * @version 2.0
  */
@@ -11,7 +14,7 @@ public class Seleccion {
 	private ArrayList <Persona> integrantes;
 
 	/**
-	 * Constructor de la clase Selección que crea una Selección vacía (Sin integrantes)
+	 * Constructor de la clase Seleccion que crea una Seleccion vacia (Sin integrantes)
 	 */
 	public Seleccion() {
 		super();
@@ -19,7 +22,7 @@ public class Seleccion {
 	}
 	
 	/**
-	 * Método para añadir integrante a la Seleccion
+	 * Metodo para añadir integrante a la Seleccion
 	 * @param integrante Puede ser Jugador, Entrenador o Masajista
 	 */
 	public void aniadirIntegrante(Persona integrante) {
@@ -31,7 +34,7 @@ public class Seleccion {
 		return "Seleccion [integrantes=" + integrantes + "]";
 	}
 	/**
-	 * Método que solo utilizan los integrantes de tipo Jugador para jugar partido
+	 * Metodo que solo utilizan los integrantes de tipo Jugador para jugar partido
 	 */
 	public void jugarPartido() {
         for (Persona persona : integrantes) {
@@ -41,7 +44,7 @@ public class Seleccion {
         }
     }
 	/**
-	 * Método que solo utilizan los integrantes de tipo Jugador para entrenar
+	 * Metodo que solo utilizan los integrantes de tipo Jugador para entrenar
 	 */
 
     public void realizarEntrenamiento() {
@@ -53,7 +56,7 @@ public class Seleccion {
     }
     
     /**
-     * Método que utilizan los integrantes de tipo Entrenador para dirigir partido
+     * Metodo que utilizan los integrantes de tipo Entrenador para dirigir partido
      */
     public void dirigirPartido(String fecha) {
         for (Persona persona : integrantes) {
@@ -63,7 +66,7 @@ public class Seleccion {
         }
     }
     /**
-     * Método que utilizan los integrantes de tipo Entrenador para dirigir entrenamiento
+     * Metodo que utilizan los integrantes de tipo Entrenador para dirigir entrenamiento
      */
 
     public void dirigirEntrenamiento(String fecha) {
@@ -74,7 +77,9 @@ public class Seleccion {
         }
     }
     
-
+    /**
+     * Metodo que utilizan los integrantes de tipo Masajista
+     */
     public void darMasaje() {
         for (Persona persona : integrantes) {
             if (persona instanceof Masajista) {

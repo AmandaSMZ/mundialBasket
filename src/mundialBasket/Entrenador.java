@@ -21,14 +21,14 @@ public class Entrenador extends Persona{
 		this.federacion = federacion;
 	}
 	/**
-	 * Método para obtener la federación
-	 * @return Nombre federación
+	 * Metodo para obtener la federacion
+	 * @return Nombre federacion String
 	 */
 	public String getFederacion() {
 		return federacion;
 	}
 	/**
-	 * Método para cambiar la federación
+	 * Metodo para cambiar la federacion
 	 * @param federacion
 	 */
 	public void setFederacion(String federacion) {
@@ -41,7 +41,7 @@ public class Entrenador extends Persona{
 		
 	}
 	/**
-	 * Método para dirigir partido
+	 * Metodo para dirigir partido
 	 * @param fecha (String)
 	 * Muestra por pantalla un mensaje
 	 */
@@ -49,7 +49,7 @@ public class Entrenador extends Persona{
 		System.out.println(this.nombre+ " está dirigiendo un partido el día "+fecha);
 	}
 	/**
-	 * Método para dirigir entrenamiento
+	 * Metodo para dirigir entrenamiento
 	 * @param fecha (String)
 	 * Muestra por pantalla un mensaje
 	 */

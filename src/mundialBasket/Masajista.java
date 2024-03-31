@@ -24,41 +24,44 @@ public class Masajista extends Persona {
 		this.aniosExperiencia = aniosExperiencia;
 	}
 	/**
-	 * Método para obtener la titulacion
-	 * @return tipo de titulación (String)
+	 * Metodo para obtener la titulacion
+	 * @return tipo de titulacion (String)
 	 */
 	public String getTitulacion() {
 		return titulacion;
 	}
 	/**
-	 * Método para cambiar la titulación
-	 * @param titulacion Nombre de la nueva titulación (String)
+	 * Metodo para cambiar la titulacion
+	 * @param titulacion Nombre de la nueva titulacion (String)
 	 */
 	protected void setTitulacion(String titulacion) {
 		this.titulacion = titulacion;
 	}
 	/**
-	 * Método para obtener los años de experiencia
+	 * Metodo para obtener los años de experiencia
 	 * @return años de experiencia (int)
 	 */
 	protected int getAniosExperiencia() {
 		return aniosExperiencia;
 	}
 	/**
-	 * Método para cambiar los años de experiencia
+	 * Metodo para cambiar los años de experiencia
 	 * @param aniosExperiencia Años de experiencia (int)
 	 */
 	protected void setAniosExperiencia(int aniosExperiencia) {
 		this.aniosExperiencia = aniosExperiencia;
 	}
-	
+	/**
+	 * Metodo para viajar heredado de Persona
+	 * Muestra un mensaje por pantalla
+	 */
 	@Override
 	public void viajar() {
 		System.out.println("Viajando para preparar a los jugadores para el partido");
 		
 	}
 	/**
-	 * Método para dar masaje
+	 * Metodo para dar masaje
 	 * Muestra un mensaje por pantalla
 	 */
 	public void darMasaje() {
