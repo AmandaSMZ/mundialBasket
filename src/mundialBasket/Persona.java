@@ -6,7 +6,7 @@ import java.time.Period;
 /**
  * Clase que representa a todos los integrantes de la seleccion
  * @author Amanda
- * @version 1.0
+ * @version 2.0
  * 
  */
 
@@ -47,6 +47,7 @@ public abstract class Persona {
 	/**
 	 * Metodo que calcula la edad de la persona.
 	 * @return Devuelve el numero de años (int).
+	 * @since 1.3
 	 */
 	public int calcularEdad() {
 		Period periodo = Period.between(this.fechaNac, LocalDate.now());
@@ -120,7 +121,7 @@ public abstract class Persona {
 	 * Metodo para mostrar por pantalla la informacion de la persona
 	 * @return devuelve un String con toda la informacion de la persona
 	 */
-	
+		
 	public String toString() {
 		return "ComponenteSeleccion [id=" + id + ", nombre=" + nombre + ", apellidos=" + apellidos + ", fechaNac="
 				+ fechaNac + "]";

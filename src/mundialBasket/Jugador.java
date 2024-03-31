@@ -3,7 +3,7 @@ package mundialBasket;
 /**
  * Clase que hereda de Persona.
  * @author amand
- * @version 1.0
+ * @version 1.3
  */
 
 public class Jugador extends Persona{
@@ -12,12 +12,12 @@ public class Jugador extends Persona{
 	
 	/**
 	 * Constructor clase Jugador
-	 * @param id ID (int)
-	 * @param nombre (String)
-	 * @param apellidos (String)
-	 * @param fechaNac (String)
-	 * @param dorsal (int)
-	 * @param demarcacion (String)
+	 * @param id ID Numero de identificacion personal del jugador (DNI sin letra)
+	 * @param nombre Nombre completo del jugador en formato String
+	 * @param apellidos Apellidos del jugador en formato String
+	 * @param fechaNac Fecha de nacimiento en formato String (aaaa-mm-dd)
+	 * @param dorsal Numero de dorsal con el que juega en formato int
+	 * @param demarcacion Posicion en la que juega en formato String
 	 */
 	public Jugador(int id, String nombre, String apellidos, String fechaNac, int dorsal, String demarcacion) {
 		super(id, nombre, apellidos, fechaNac);
@@ -26,14 +26,14 @@ public class Jugador extends Persona{
 	}
 	/**
 	 * Metodo para obtener el numero de dorsal
-	 * @return numero de dorsal (int)
+	 * @return numero Numero de dorsal en formato int
 	 */
 	protected int getDorsal() {
 		return dorsal;
 	}
 	/**
 	 * Metodo para cambiar el dorsal
-	 * @param dorsal (Nuevo numero de dorsal)
+	 * @param dorsal Nuevo numero de dorsal del jugador en formato int
 	 */
 	protected void setDorsal(int dorsal) {
 		this.dorsal = dorsal;
@@ -47,7 +47,7 @@ public class Jugador extends Persona{
 	}
 	/**
 	 * Metodo para cambiar la demarcacion
-	 * @param demarcacion String
+	 * @param demarcacion Nueva demarcacion del jugador en formato String
 	 */
 	protected void setDemarcacion(String demarcacion) {
 		this.demarcacion = demarcacion;
@@ -76,6 +76,9 @@ public class Jugador extends Persona{
 	}
 
 	@Override
+	/**
+	 * Metodo que devuelve un String con toda la informacion propia del jugador y de la clase Persona
+	 */
 	public String toString() {
 		return "Jugador [dorsal=" + dorsal + ", demarcacion=" + demarcacion + ", id=" + id + ", nombre=" + nombre
 				+ ", apellidos=" + apellidos + ", fechaNac=" + fechaNac + "]";

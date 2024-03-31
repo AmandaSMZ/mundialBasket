@@ -1,11 +1,12 @@
 /**
- * Paquete que contiene las clases que representan a una seleccion
+ * 
  */
 package mundialBasket;
 
 import java.util.ArrayList;
 /**
  * Clase que contiene una lista con los integrantes de la seleccion (Pueden ser de las clases que heredan de Persona)
+ * Actualmente (31-03-2024) no se controla la cantidad de integrantes en total ni por tipo (Pueden añadirse infinitos integrantes)
  * @author amand
  * @version 2.0
  */

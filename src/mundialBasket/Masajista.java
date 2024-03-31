@@ -1,6 +1,6 @@
 package mundialBasket;
 	/**
-	 * Hereda de Persona
+	 * Clase que hereda de Persona
 	 * @author amand
 	 * @version 2.0
 	 */
@@ -10,12 +10,12 @@ public class Masajista extends Persona {
 	
 	/**
 	 * Constructor Masajista
-	 * @param id
-	 * @param nombre
-	 * @param apellidos
-	 * @param fechaNac
-	 * @param titulacion
-	 * @param aniosExperiencia
+	 * @param id Numero de identificacion personal del Masajista (DNI sin letra)
+	 * @param nombre Nombre completo en formato String
+	 * @param apellidos Apellidos en formato String
+	 * @param fechaNac Fecha de nacimiento en formato String (aaaa-mm-dd)
+	 * @param titulacion Titulo que posee el masajista en formato String
+	 * @param aniosExperiencia Anios que lleva el masajista trabajando con selecciones
 	 */
 	public Masajista(int id, String nombre, String apellidos, String fechaNac, String titulacion,
 			int aniosExperiencia) {
@@ -69,8 +69,11 @@ public class Masajista extends Persona {
 	}
 
 	@Override
+	/**
+	 * Metodo que devuelve un String con todos los atributos de Masajista y ademas los de la clase Persona
+	 */
 	public String toString() {
-		return "Masajista [titulacion=" + titulacion + ", aniosExperiencia=" + aniosExperiencia + ", id=" + id
+		return super.toString()+ "Masajista [titulacion=" + titulacion + ", aniosExperiencia=" + aniosExperiencia + ", id=" + id
 				+ ", nombre=" + nombre + ", apellidos=" + apellidos + ", fechaNac=" + fechaNac + "]";
 	}
 

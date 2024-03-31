@@ -1,5 +1,9 @@
 package mundialBasket;
-
+	/**
+	 * Clase principal (main) desde la que se realizan las gestiones de la seleccion
+	 * @author amand
+	 * @version 1.4
+	 */
 public class Principal {
 
 	public static void main(String[] args) {
