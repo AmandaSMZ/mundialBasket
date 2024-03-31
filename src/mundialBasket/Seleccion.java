@@ -41,6 +41,7 @@ public class Seleccion {
 	}
 	/**
 	 * Metodo que solo utilizan los integrantes de tipo Jugador para jugar partido
+	 * @see Jugador#jugarPartido()
 	 */
 	public void jugarPartido() {
         for (Persona persona : integrantes) {
@@ -51,6 +52,7 @@ public class Seleccion {
     }
 	/**
 	 * Metodo que solo utilizan los integrantes de tipo Jugador para entrenar
+	 * @see Jugador#entrenar()
 	 */
 
     public void realizarEntrenamiento() {
@@ -63,6 +65,7 @@ public class Seleccion {
     
     /**
      * Metodo que utilizan los integrantes de tipo Entrenador para dirigir partido
+     * @see Entrenador#dirigirPartido(String)
      */
     public void dirigirPartido(String fecha) {
         for (Persona persona : integrantes) {
@@ -73,6 +76,7 @@ public class Seleccion {
     }
     /**
      * Metodo que utilizan los integrantes de tipo Entrenador para dirigir entrenamiento
+     * @see Entrenador#dirigirEntrenamiento(String)
      */
 
     public void dirigirEntrenamiento(String fecha) {
@@ -85,6 +89,7 @@ public class Seleccion {
     
     /**
      * Metodo que utilizan los integrantes de tipo Masajista
+     * @see Masajista#darMasaje()
      */
     public void darMasaje() {
         for (Persona persona : integrantes) {
