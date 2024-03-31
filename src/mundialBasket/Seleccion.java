@@ -12,6 +12,11 @@ import java.util.ArrayList;
  */
 
 public class Seleccion {
+	/**
+	 * ArrayList en la que se almacenan todos los integrantes de la seleccion
+	 * Pueden ser Jugador, Masajista o Entrenador
+	 * Aun no se controla la cantidad de cada uno que puede haber en cada seleccion
+	 */
 	private ArrayList <Persona> integrantes;
 
 	/**

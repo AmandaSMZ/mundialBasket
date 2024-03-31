@@ -7,7 +7,13 @@ package mundialBasket;
  */
 
 public class Jugador extends Persona{
+	/**
+	 * Numero de dorsal con el que juega los partidos el jugador
+	 */
 	private int dorsal;
+	/**
+	 * Posicion principal en la que juega
+	 */
 	private String demarcacion;
 	
 	/**
@@ -59,11 +65,12 @@ public class Jugador extends Persona{
 	@Override
 	public void viajar() {
 		System.out.println("Viajando para jugar el partido.");
+	}
+	
 	/**
 	 * Metodo para jugar un partido
 	 * Muestra un mensaje por pantalla
 	 */
-	}
 	public void jugarPartido() {
 		System.out.println(this.nombre+" está jugando un partido.");
 	}
@@ -80,7 +87,7 @@ public class Jugador extends Persona{
 	 * Metodo que devuelve un String con toda la informacion propia del jugador y de la clase Persona
 	 */
 	public String toString() {
-		return "Jugador [dorsal=" + dorsal + ", demarcacion=" + demarcacion + ", id=" + id + ", nombre=" + nombre
+		return super.toString()+"Jugador [dorsal=" + dorsal + ", demarcacion=" + demarcacion + ", id=" + id + ", nombre=" + nombre
 				+ ", apellidos=" + apellidos + ", fechaNac=" + fechaNac + "]";
 	}
 	
