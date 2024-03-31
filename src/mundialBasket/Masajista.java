@@ -1,6 +1,6 @@
 package mundialBasket;
 	/**
-	 * Clase que hereda de Persona
+	 * <h3>Clase que representa a los jugadores de la seleccion (hereda de Persona)</h3>
 	 * @author amand
 	 * @version 2.0
 	 */

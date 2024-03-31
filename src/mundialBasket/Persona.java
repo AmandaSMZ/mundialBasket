@@ -4,7 +4,8 @@ import java.time.LocalDate;
 import java.time.Period;
 
 /**
- * Clase que representa a todos los integrantes de la seleccion
+ * <h3>Clase abstracta que representa a todos los integrantes de la seleccion</h3>
+ * No se puede instanciar
  * @author Amanda
  * @version 2.0
  * 

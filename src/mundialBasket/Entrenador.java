@@ -1,7 +1,7 @@
 package mundialBasket;
 
 /**
- * Clase que hereda de Persona
+ * <h3>Clase que representa a los entrenadores de la seleccion (hereda de Persona)</h3>
  * @author amand
  * @version 1.5
  */
@@ -17,7 +17,7 @@ public class Entrenador extends Persona{
 	 * @param nombre Nombre completo del entrenador
 	 * @param apellidos Todos los apellidos del entrenador
 	 * @param fechaNac Fecha de nacimiento en formato String (aaaa-mm-dd)
-	 * @param federacion Nombre de la federacion en la que se tituló el entrenador
+	 * @param federacion Nombre de la federacion en la que se titulo el entrenador
 	 */
 	public Entrenador(int id, String nombre, String apellidos, String fechaNac, String federacion) {
 		super(id, nombre, apellidos, fechaNac);
