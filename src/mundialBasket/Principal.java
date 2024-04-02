@@ -14,6 +14,7 @@ public class Principal {
 		italia.aniadirIntegrante(new Entrenador(456, "Juan","Rodriguez Vazquez", "1987-06-19", "Federacion de Madrid"));
 		italia.aniadirIntegrante(new Masajista(166, "Lucia", "Sanchez", "1994-05-13","Grado Enfermería",5));
 		
+		italia.viajar("Madrid");
 		italia.darMasaje();
 		italia.dirigirEntrenamiento("2024-06-05");
 		italia.jugarPartido();

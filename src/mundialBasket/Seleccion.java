@@ -98,6 +98,11 @@ public class Seleccion {
             }
         }
     }
+    public void viajar(String lugar) {
+    	 for (Persona persona : integrantes) {
+    		 persona.viajar(lugar);
+    	 }
+    }
 	
 	
 	

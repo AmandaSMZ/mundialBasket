@@ -43,8 +43,8 @@ public class Entrenador extends Persona{
 	 * Método abstracto de la clase persona
 	 * Muestra un mensaje por pantalla
 	 */
-	public void viajar() {
-		System.out.println("Viajando para dirigir al equipo en el partido ");
+	public void viajar(String lugar) {
+		System.out.println("Viajando para dirigir al equipo en el partido de "+lugar);
 		
 	}
 	/**

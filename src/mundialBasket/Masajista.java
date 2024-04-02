@@ -56,8 +56,8 @@ public class Masajista extends Persona {
 	 * Muestra un mensaje por pantalla
 	 */
 	@Override
-	public void viajar() {
-		System.out.println("Viajando para preparar a los jugadores para el partido");
+	public void viajar(String lugar) {
+		System.out.println("Viajando para preparar a los jugadores para el partido de "+lugar);
 		
 	}
 	/**

@@ -116,7 +116,7 @@ public abstract class Persona {
 	/**
 	 * Metodo abstracto que implementan todos los integrantes de la seleccion
 	 */
-	public abstract void viajar();
+	public abstract void viajar(String lugar);
 	@Override
 	/**
 	 * Metodo para mostrar por pantalla la informacion de la persona
@@ -127,5 +127,6 @@ public abstract class Persona {
 		return "ComponenteSeleccion [id=" + id + ", nombre=" + nombre + ", apellidos=" + apellidos + ", fechaNac="
 				+ fechaNac + "]";
 	}
+
 	
 }

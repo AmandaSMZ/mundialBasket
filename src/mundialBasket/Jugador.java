@@ -63,8 +63,8 @@ public class Jugador extends Persona{
 	 * Muestra un mensaje por pantalla
 	 */
 	@Override
-	public void viajar() {
-		System.out.println("Viajando para jugar el partido.");
+	public void viajar(String lugar) {
+		System.out.println("Viajando para jugar el partido en "+lugar);
 	}
 	
 	/**
